@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="inscription.js"></script>
+<head>
+    <title> atelier3</title>
+        <a href="acueill.html">Home</a>
+        <a href="Projetsettaches.html">Projets et taches</a>
+        <a href="listeemployee.html">Liste employés</a>
+        <a href="inscription.html">Inscription</a>
+        <link rel="stylesheet" href="style.css">
+    <hr>
+</head>
+<body>
+    <img src="photo.jpg" alt="photo"width="1350" height="600" >
+        <h1>Inscription au site</h1>
+
+
+    <form id="form">
+      <table>
+        <tr>
+          <td><label for="name">Nom :</label></td>
+          <td>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              title="Veuillez entrer un nom valide (lettres uniquement)"
+            />
+            <span id="nameMessage"></span><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="Fam-Name">Nom de famille :</label></td>
+          <td>
+            <input
+              type="text"
+              id="prenom"
+              name="prenom"
+
+              title="Veuillez entrer un nom de famille valide (lettres uniquement)"
+            />
+            <span id="fnMessage"></span><br>
+          </td>
+        </tr>    
+
+        <tr>
+          <td><label for="tel">Téléphone :</label></td>
+          <td>
+            <input
+              type="tel"
+              id="tel"
+              name="tel"
+
+              title="Veuillez entrer un numéro de téléphone valide (8 chiffres)"
+            />
+            <span id="telMessage"></span><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="mail">E-mail :</label></td>
+          <td>
+            <input
+              type="text"
+              id="mail"
+              name="mail"
+
+              title="Veuillez entrer un mail valide (has to be esprit.tn)"
+            />
+            <span id="emailMessage"></span><br>
+          </td>
+        </tr>    
+
+        <tr>
+          <td><label for="bdate">Date de naissance :</label></td>
+          <td>
+            <input
+              type="date"
+              id="dateOfBirth"
+              name="bdate"
+              title="Le champ date de naissance est obligatoire."
+            />
+            <span id="bdateMessage"></span><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="Password">Mot de passe :</label></td>
+          <td>
+            <input
+              type="password"
+              id="password"
+              name="Password"
+              placeholder="Votre mot de passe"
+            />
+            <span id="passwordMessage"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td><button type="submit" id="myButton" onclick="validerDateOfBirth()">Submit</button><br></td>
+        </tr>
+      </table>
+    </form>
+
+    <hr />
+    <p>
+      vous pouvez nous contacter sur :<a href="https://www.esprit.tn/contact"
+        >contact@esprit.tn</a
+      >
+    </p>
+    <p>Address: Ghazela</p>
+  </body>
+</html>
